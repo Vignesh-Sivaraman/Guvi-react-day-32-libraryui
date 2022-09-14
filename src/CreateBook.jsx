@@ -91,7 +91,7 @@ function CreateBook() {
             <span style={{ color: "red" }}>{formik.errors.year}</span>
           </div>
 
-          <div className="col-lg-6 mt-2">
+          <div className="col-lg-12 mt-2">
             <input
               className=" btn btn-primary"
               type={"submit"}
