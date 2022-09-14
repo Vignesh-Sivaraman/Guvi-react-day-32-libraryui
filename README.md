@@ -1,4 +1,4 @@
-Deplyed URL:  https://guvi-day-32-library.netlify.app/
+Deployed URL:  https://guvi-day-32-library.netlify.app/
 
 
 
