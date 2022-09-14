@@ -2,25 +2,8 @@ import { useFormik } from "formik";
 import React, { useContext, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import UserContext from "./UserContext";
 
 function CreateBook() {
-  let context = useContext(UserContext);
-  // useEffect(() => {
-  //   return loadData;
-  // });
-
-  // let loadData = async () => {
-  //   try {
-  //     let books = await axios.get(
-  //       "https://631f097322cefb1edc40d739.mockapi.io/books"
-  //     );
-  //     context.setbookcount(books.data.length);
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
-
   const navigate = useNavigate();
   const formik = useFormik({
     initialValues: {

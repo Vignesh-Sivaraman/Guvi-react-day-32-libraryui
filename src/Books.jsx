@@ -15,7 +15,6 @@ function Books() {
 
   useEffect(() => {
     setbooks(books);
-    // context.setbookcount(books.length);
   }, [count]);
 
   let loadData = async () => {
@@ -26,7 +25,6 @@ function Books() {
       );
       setbooks(books.data);
       setLoading(false);
-      // context.setbookcount(books.data.length);
     } catch (error) {
       console.error(error);
     }
