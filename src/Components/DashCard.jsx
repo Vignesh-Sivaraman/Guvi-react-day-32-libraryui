@@ -6,12 +6,23 @@ import axios from "axios";
 function DashCard() {
   let context = useContext(UserContext);
   let [isLoading, setLoading] = useState(false);
+  const [data, setData] = useState([]);
   useEffect(() => {
     loadData1();
     loadData2();
     loadData3();
     loadData4();
-  });
+    // const [data, setData] = useState([]);
+    // (async () => {
+    //   const data1 = await axios.get(
+    //     "https://631f097322cefb1edc40d739.mockapi.io/books"
+    //   );
+    //   const data2 = await axios.get(
+    //     "https://jsonplaceholder.typicode.com/todos/2"
+    //   );
+    //   setData({ data1, data2 });
+    // })();
+  }, []);
 
   let loadData1 = async () => {
     try {
